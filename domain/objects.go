@@ -1,5 +1,12 @@
 package domain
 
+import "github.com/PuerkitoBio/goquery"
+
+type Request struct {
+	Url       string
+	ParseFunc func(*goquery.Document) Contents
+}
+
 type Content struct {
 	URL          string // 链接
 	Title        string // 标题
