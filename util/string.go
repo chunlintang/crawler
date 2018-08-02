@@ -36,7 +36,7 @@ func StringReplace(str string) string {
 func StringSplitByDot(str string) (int, int, int) {
 	var stringList []string
 
-	stringList = strings.Split(str, ".")
+	stringList = strings.Split(str, "•")
 
 	var numberList []int
 	for index, oneString := range stringList {
