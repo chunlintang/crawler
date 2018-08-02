@@ -1,15 +1,10 @@
 package gocn_vip
 
 import (
-	"errors"
 	"github.com/PuerkitoBio/goquery"
 	"github.com/chunlintang/crawler/domain"
 	"github.com/chunlintang/crawler/util"
 	"github.com/chunlintang/crawler/download"
-)
-
-var (
-	ErrorParse = errors.New("parse error")
 )
 
 func TitleParse(document *goquery.Document) domain.Contents {
